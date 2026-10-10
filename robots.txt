@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://stiffapp.github.io/SHADE.UK/sitemap.xml
