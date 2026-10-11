@@ -1,3 +1,10 @@
+// Small UI repair layer for the current homepage markup.
+const uiFixes=document.createElement('style');
+uiFixes.textContent=`
+.product button{width:100%;border:0;border-radius:999px;padding:13px 20px;background:var(--ink);color:#fff;font:inherit;font-weight:800;cursor:pointer;transition:transform .18s ease,box-shadow .18s ease,background .18s ease}.product button:hover{transform:translateY(-1px);box-shadow:0 8px 22px #13201920;background:#203b2b}.product button:focus-visible{outline:3px solid var(--acid);outline-offset:3px}.offer-grid article{border:1px solid transparent;transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease}.offer-grid article:hover{transform:translateY(-3px);box-shadow:0 16px 38px #13201910;border-color:#d8ded9}.offer-grid article>span{display:inline-flex;width:34px;height:34px;align-items:center;justify-content:center;border-radius:50%;background:var(--sage);font-size:11px;font-weight:900}.offer-grid .offer-featured{background:var(--ink);color:#fff}.offer-grid .offer-featured>span{background:var(--acid);color:var(--ink)}.offer-grid .offer-featured p{color:#c3cec7}.offer-actions{display:flex;gap:12px;align-items:center;margin-top:28px;flex-wrap:wrap}.offers .sectionhead{margin-bottom:32px}@media(max-width:600px){.offer-actions{display:grid;grid-template-columns:1fr}.offer-actions a{text-align:center}.product button{padding:14px 18px}}
+`;
+document.head.appendChild(uiFixes);
+
 const menu=document.querySelector('.menu'),nav=document.querySelector('header nav');
 if(menu&&nav){
   menu.addEventListener('click',()=>nav.classList.toggle('open'));
