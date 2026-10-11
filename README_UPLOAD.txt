@@ -1,18 +1,25 @@
-SHADE UK — READY-TO-UPLOAD PATCH
+SHADE UK — ALL PRODUCT IMAGE UPDATE
 
-Upload these three items to the ROOT of the existing STIFFAPP/SHADE.UK repository,
-preserving the folders exactly:
+This fixes the issue where only SHADE ONE changed.
 
-1. index.html
-   Replace the existing index.html
+Upload these files into the existing STIFFAPP/SHADE.UK repository,
+keeping the folder structure exactly as shown.
 
-2. product.html
-   Replace the existing product.html
+REPLACE:
+index.html
+product.html
+assets/shade_one_plus.png
+assets/shade_custom.png
+assets/shade_duo.png
+assets/shade_fleet.png
+assets/shade_play_care.png
 
-3. assets/shade_one_luxury_twilight_carport.png
-   Add this new image inside the existing assets folder
+ADD / KEEP:
+assets/shade_one_luxury_twilight_carport.png
 
-No other site files need to be replaced for this change.
+The replacement product images are the full individual 1448 × 1086 HD files.
+Because they keep the same filenames already used by the website, the homepage
+range and the individual product pages will pick them up automatically.
 
-After GitHub Pages redeploys, hard-refresh:
-Mac: Command + Shift + R
+After GitHub Pages deploys:
+Mac Chrome hard refresh = Command + Shift + R
