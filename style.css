@@ -87,3 +87,14 @@ img{max-width:100%}
  .mobile-cta a:last-child{background:var(--acid);color:var(--ink)}
  .offer-actions{display:grid;grid-template-columns:1fr}.offer-actions a{text-align:center}
 }
+
+
+/* Clickable product cards and gallery */
+.product[data-product]{cursor:pointer;position:relative}
+.product[data-product]:focus-visible{outline:3px solid var(--acid);outline-offset:4px}
+.product[data-product] h3{transition:color .18s ease}
+.product[data-product]:hover h3{color:#52705c}
+.gallery-link{display:block;border-radius:18px;overflow:hidden;text-decoration:none;transition:transform .18s ease,box-shadow .18s ease}
+.gallery-link:hover{transform:translateY(-3px);box-shadow:0 16px 35px #13201918}
+.gallery-link:focus-visible{outline:3px solid var(--acid);outline-offset:4px}
+.gallery-link img{display:block;width:100%}
